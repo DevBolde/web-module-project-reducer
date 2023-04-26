@@ -6,6 +6,7 @@ import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 
 import reducer, {initialState} from '../reducers/index'
+import { ADD_ONE } from '../actions';
 
 function App() {
   const[ state, dispatch ] = useReducer(reducer, initialState)
