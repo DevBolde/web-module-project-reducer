@@ -10,9 +10,11 @@ import { applyNumber } from '../actions';
 
 function App() {
   const[ state, dispatch ] = useReducer(reducer, initialState)
+
 const handleNumberClick =(number) => {
   dispatch(applyNumber(number));
 }
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
